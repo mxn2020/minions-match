@@ -1,6 +1,12 @@
 ---
 name: minions-match
-description: Match scoring, shortlists, and hard gate evaluation between jobs and profile
+id: OC-0129
+version: 1.0.0
+description: "Match scoring, shortlists, and hard gate evaluation between jobs and profile"
+category: ai
+subcategory: general
+tags: ["minion", "ai", "general"]
+comments:
 ---
 
 # minions-match — Agent Skills
