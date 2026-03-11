@@ -1,0 +1,8 @@
+name: "@minions-match/cli"
+project_scope: child
+child_type: cli
+parent_project: minions-match-workspace
+description: "CLI for minions-match — Match scoring, shortlists, and hard gate evaluation between jobs and profile"
+priority: high
+deploy_url: null
+tags: null

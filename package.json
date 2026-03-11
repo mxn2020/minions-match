@@ -1,28 +1,40 @@
 {
-    "name": "minions-match-workspace",
-    "private": true,
-    "version": "0.1.0",
-    "description": "Match scoring, shortlists, and hard gate evaluation between jobs and profile",
-    "type": "module",
-    "license": "MIT",
-    "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
-    "workspaces": [
-        "packages/*",
-        "apps/*"
-    ],
-    "scripts": {
-        "build": "pnpm --filter @minions-match/sdk run build && pnpm --filter @minions-match/cli run build && pnpm --filter minions-match-docs run build && pnpm --filter minions-match-blog run build && pnpm --filter minions-match-web run build",
-        "deploy:blog": "pnpm --filter minions-match-blog run build && netlify deploy --dir apps/blog/dist --prod",
-        "deploy:docs": "pnpm --filter minions-match-docs run build && netlify deploy --dir apps/docs/dist --prod",
-        "deploy:web": "pnpm --filter minions-match-web run build && netlify deploy --dir apps/web/dist --prod",
-        "test": "pnpm --filter @minions-match/sdk run test",
-        "lint": "pnpm --filter @minions-match/sdk run build && pnpm --filter @minions-match/sdk run lint && pnpm --filter @minions-match/cli run lint",
-        "deploy": "pnpm run deploy:blog"
-    },
-    "engines": {
-        "node": ">=20"
-    },
-    "devDependencies": {
-        "typescript": "^5.9.3"
-    }
+  "name": "minions-match-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Match scoring, shortlists, and hard gate evaluation between jobs and profile",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter @minions-match/sdk run build && pnpm --filter @minions-match/cli run build && pnpm --filter minions-match-docs run build && pnpm --filter minions-match-blog run build && pnpm --filter minions-match-web run build",
+    "deploy:blog": "pnpm --filter minions-match-blog run build && netlify deploy --dir apps/blog/dist --prod",
+    "deploy:docs": "pnpm --filter minions-match-docs run build && netlify deploy --dir apps/docs/dist --prod",
+    "deploy:web": "pnpm --filter minions-match-web run build && netlify deploy --dir apps/web/dist --prod",
+    "test": "pnpm --filter @minions-match/sdk run test",
+    "lint": "pnpm --filter @minions-match/sdk run build && pnpm --filter @minions-match/sdk run lint && pnpm --filter @minions-match/cli run lint",
+    "deploy": "pnpm run deploy:blog",
+    "dev": "echo 'no dev'",
+    "stop": "pkill -f 'node.*minions-match' || true"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxn2020/minions"
+  },
+  "keywords": [
+    "minions",
+    "ecosystem",
+    "compliance"
+  ]
 }

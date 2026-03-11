@@ -1,0 +1,8 @@
+name: "@minions-match/sdk"
+project_scope: child
+child_type: sdk
+parent_project: minions-match-workspace
+description: "Match scoring, shortlists, and hard gate evaluation between jobs and profile"
+priority: high
+deploy_url: null
+tags: null

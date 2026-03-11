@@ -1,0 +1,8 @@
+name: minions-match-web
+project_scope: child
+child_type: web-app
+parent_project: minions-match-workspace
+description: Standard compliance definition for minions-match-web
+priority: high
+deploy_url: null
+tags: null
