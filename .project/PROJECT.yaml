@@ -1,0 +1,16 @@
+name: minions-match-workspace
+project_scope: main
+project_type: monorepo
+description: Match scoring, shortlists, and hard gate evaluation between jobs and profile
+tier: prototype
+lane: minions-platform
+priority: medium
+oss: true
+stack: ["typescript"]
+repo: "https://github.com/mxn2020/minions-match"
+deploy_url: null
+last_active: 2026-03-11
+tags: ["minions-match-workspace", "minions", "toolbox"]
+notes: null
+id: null
+category: minion-toolbox
