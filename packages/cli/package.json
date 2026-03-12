@@ -1,6 +1,6 @@
 {
   "name": "@minions-match/cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI for minions-match — Match scoring, shortlists, and hard gate evaluation between jobs and profile",
   "license": "MIT",
   "repository": {
